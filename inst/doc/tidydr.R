@@ -10,6 +10,9 @@ library(tidydr)
 library(tidydr)
 x <- dr(data = iris[,1:4], fun = prcomp)
 
+## ---- message = TRUE----------------------------------------------------------
+available_methods()
+
 ## -----------------------------------------------------------------------------
 library(ggplot2)
 ## metadata as a vector

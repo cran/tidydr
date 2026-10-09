@@ -1,30 +1,35 @@
 Package: tidydr
 Title: Unify Dimensionality Reduction Results
-Version: 0.0.6
+Version: 0.0.7
 Authors@R: c(
     person("Guangchuang", "Yu", , "guangchuangyu@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-6485-8781")),
     person("Shuangbin", "Xu", , "xshuangbin@163.com", role = "aut",
-           comment = c(ORCID = "0000-0003-3513-5362")),
-    person("Erqiang", "Hu", , "13766876214@163.com", role = "ctb")
+           comment = c(ORCID = "0000-0003-3513-5362"))
   )
-Description: Dimensionality reduction (DR) is widely used in many domain for analyzing and visualizing high-dimensional data. 'tidydr' provides uniform output and is compatible with multiple methods, including 'prcomp', 'mds', 'Rtsne'. etc.
+Description: Dimensionality reduction is widely used in many domains for
+    analyzing and visualizing high-dimensional data. 'tidydr' provides uniform
+    output and is compatible with multiple methods, including 'prcomp',
+    'cmdscale', 'Rtsne', 'umap' and 'metaMDS'. Any function returning a numeric
+    matrix can also be used. The unified result can be visualized directly with
+    'ggplot2', and several methods can be run and compared in a single call.
 Imports: cluster, ggfun, ggplot2, grid, rlang, stats, utils
 Suggests: knitr, rmarkdown, prettydoc, SingleCellExperiment,
-        SummarizedExperiment
+        SummarizedExperiment, ape, MASS, Rtsne, uwot, vegan, smacof,
+        ecodist, ade4, labdsv, testthat (>= 3.0.0)
 VignetteBuilder: knitr
 ByteCompile: true
 License: Artistic-2.0
 URL: https://github.com/YuLab-SMU/tidydr/
 BugReports: https://github.com/YuLab-SMU/tidydr/issues
 Encoding: UTF-8
-RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
 NeedsCompilation: no
-Packaged: 2025-07-25 10:31:21 UTC; HUAWEI
+Packaged: 2026-10-09 12:05:47 UTC; wang
 Author: Guangchuang Yu [aut, cre, cph] (ORCID:
     <https://orcid.org/0000-0002-6485-8781>),
-  Shuangbin Xu [aut] (ORCID: <https://orcid.org/0000-0003-3513-5362>),
-  Erqiang Hu [ctb]
+  Shuangbin Xu [aut] (ORCID: <https://orcid.org/0000-0003-3513-5362>)
 Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
 Repository: CRAN
-Date/Publication: 2025-07-25 10:50:02 UTC
+Date/Publication: 2026-10-09 12:30:02 UTC
